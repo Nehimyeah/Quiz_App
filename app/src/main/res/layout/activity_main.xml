@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Question 1: RadioGroup for single-choice -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1: What is Kotlin primarily used for?"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Development" />
+
+        <RadioButton
+            android:id="@+id/radioButtonWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web Development" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDataScience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Science" />
+    </RadioGroup>
+
+    <!-- Question 2: CheckBoxes for multiple-choice -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 2: Which of these are features of Kotlin?"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNullSafety"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Null Safety" />
+
+    <CheckBox
+        android:id="@+id/checkBoxExtensionFunctions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extension Functions" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCoroutines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coroutines" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginRight="10dp"
+            android:onClick="submit"
+            />
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:onClick="reset"
+            android:text="Reset"
+            />
+    </LinearLayout>
+
+</LinearLayout>
